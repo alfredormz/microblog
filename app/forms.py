@@ -49,6 +49,10 @@ class EditProfileForm(FlaskForm):
 
 
 
+class PostForm(FlaskForm):
+    """Blog submission form"""
+    post = TextAreaField('Say something', validators=[
+        DataRequired(), Length(min=1, max=140)])
+    submit = SubmitField('Submit')
+        
 
-
-                

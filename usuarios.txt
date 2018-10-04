@@ -1,0 +1,8 @@
+Usuario: clave
+
+juan    perro
+marcos  casa
+ariel   pez
+laura   casio
+gaston  pan
+susan   cat

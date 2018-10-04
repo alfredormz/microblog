@@ -8,3 +8,52 @@
 2018-10-03 17:00:09,557 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
 2018-10-03 17:03:16,353 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
 2018-10-03 17:03:20,448 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
+2018-10-04 12:15:14,074 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
+2018-10-04 12:19:50,299 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
+2018-10-04 12:20:33,210 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
+2018-10-04 12:20:38,904 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
+2018-10-04 12:26:53,923 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
+2018-10-04 12:43:00,772 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
+2018-10-04 12:44:49,612 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
+2018-10-04 13:12:12,863 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
+2018-10-04 13:12:21,056 ERROR: Exception on /explore [GET] [in /Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/123seguro/microblog/app/routes.py", line 139, in explore
+    return render_template('index.html', title='Explore', posts=posts)
+NameError: name 'posts' is not defined
+2018-10-04 13:12:23,884 ERROR: Exception on /explore [GET] [in /Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/123seguro/microblog/app/routes.py", line 139, in explore
+    return render_template('index.html', title='Explore', posts=posts)
+NameError: name 'posts' is not defined
+2018-10-04 13:14:02,553 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
+2018-10-04 14:59:49,062 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
+2018-10-04 16:40:54,395 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:44]
