@@ -6,3 +6,17 @@ ariel   pez
 laura   casio
 gaston  pan
 susan   cat
+nicoreset reset-nuevo
+
+
+
+Mail server
+nicoflaskserver@gmail.com
+
+
+(venv) $ export MAIL_SERVER=smtp.googlemail.com
+(venv) $ export MAIL_PORT=587
+(venv) $ export MAIL_USE_TLS=1
+(venv) $ export MAIL_USERNAME=nicoflaskserver@gmail.com
+(venv) $ export MAIL_PASSWORD=<your-gmail-password>
+
