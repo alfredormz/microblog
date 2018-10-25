@@ -54,3 +54,59 @@ Traceback (most recent call last):
 smtplib.SMTPServerDisconnected: please run connect() first
 2018-10-12 17:14:11,135 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:46]
 2018-10-12 17:30:57,843 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:46]
+2018-10-14 12:40:38,242 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:46]
+2018-10-16 15:56:39,214 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:50]
+2018-10-17 12:51:32,730 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:50]
+2018-10-17 12:54:26,783 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:50]
+2018-10-17 18:50:18,617 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:52]
+2018-10-17 18:50:23,130 ERROR: Exception on / [GET] [in /Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/123seguro/microblog/app/routes.py", line 41, in index
+    prev_url=prev_url)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/123seguro/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/123seguro/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/Users/123seguro/microblog/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 26, in block "body"
+    {% block scripts %}
+  File "/Users/123seguro/microblog/app/templates/base.html", line 54, in block "scripts"
+    {{ moment.inculude_moment() }}
+jinja2.exceptions.UndefinedError: 'type object' has no attribute 'inculude_moment'
+2018-10-17 18:51:59,868 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:52]
+2018-10-17 19:38:14,470 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:52]
+2018-10-23 14:24:40,575 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:56]
+2018-10-23 14:25:47,745 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:56]
+2018-10-25 16:22:03,726 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:56]
+2018-10-25 16:22:23,797 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:56]
