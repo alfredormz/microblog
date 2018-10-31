@@ -110,3 +110,5 @@ jinja2.exceptions.UndefinedError: 'type object' has no attribute 'inculude_momen
 2018-10-23 14:25:47,745 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:56]
 2018-10-25 16:22:03,726 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:56]
 2018-10-25 16:22:23,797 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:56]
+2018-10-31 09:46:41,627 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:56]
+2018-10-31 09:46:49,510 INFO: Microblog startup [in /Users/123seguro/microblog/app/__init__.py:56]
