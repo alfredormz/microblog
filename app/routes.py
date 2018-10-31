@@ -7,6 +7,7 @@ from app.forms import LoginForm, RegistrationForm, EditProfileForm, PostForm, Re
 from app.models import User, Post
 from app.email import send_password_reset_email
 from flask_babel import _, get_locale
+from guess_language import guess_language
 
 
 
@@ -24,7 +25,10 @@ def before_request():
 def index():
     form = PostForm()
     if form.validate_on_submit():
-        post = Post(body=form.post.data, author=current_user)
+        language = guess_language(form.post.data)
+        if language == 'UNKNOWN' or len(language) > 5:
+            language = ''
+        post = Post(body=form.post.data, author=current_user, language=language)
         db.session.add(post)
         db.session.commit()
         flash(_('Yout post is now live!'))
